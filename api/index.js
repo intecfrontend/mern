@@ -1,17 +1,9 @@
-import React from 'react'
-import {Link} from "react-router-dom";
+const express = require('express');
+const app = express();
+const cors = require('cors');
+app.use(cors());
+app.post('/register', (req, res) => {
+  res.json('info');
+});
 
-function Header() {
-  return (
-    <div>
-      <header>
-      <Link to="/" className="logo">My Blog</Link>
-      <nav>
-      <Link to="/login" className="logo">Login</Link>
-        <Link to="/register" className="logo">Register</Link></nav>
-      </header>
-    </div>
-  )
-}
-
-export default Header
+app.listen(4010);
