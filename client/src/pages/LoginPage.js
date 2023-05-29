@@ -5,10 +5,14 @@ import { Navigate } from "react-router-dom";
 
 export default function LoginPage() {
   return (
-    <div>LoginPage
-
-
-    
+    <div>
+      <form  className="login" action="" >
+        <input type="text"
+          placeholder={'Title'} />
+        <input type="password"
+          placeholder={'Summary'} />
+        <button style={{ marginTop: '5px' }}>Login</button>
+      </form>
     </div>
   )
 }

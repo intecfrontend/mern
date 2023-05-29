@@ -1,5 +1,4 @@
 import Header from "./Header";
-import Post from "./Post";
 import {Outlet} from "react-router-dom";
 
 export default function Layout() {
@@ -7,9 +6,6 @@ export default function Layout() {
     <main>
       <Header />
       <Outlet />
-      <Post />
-      <Post />
-      <Post />
     </main>
   );
 }
