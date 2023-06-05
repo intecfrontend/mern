@@ -6,7 +6,7 @@ import { Navigate } from "react-router-dom";
 export default function LoginPage() {
   return (
     <div>
-      <form  className="login" action="" >
+      <form  className="login" action="#" >
         <input type="text"
           placeholder={'Title'} />
         <input type="password"
